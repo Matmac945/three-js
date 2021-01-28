@@ -1,6 +1,6 @@
-## Three.JS Experiments
+## ThreeJS Experiments
 
-Three.JS Experiments based on:
+ThreeJS Experiments based on:
 
 1. [threejsfundament.org](https://threejsfundamentals.org/threejs/lessons/threejs-responsive.html)
 

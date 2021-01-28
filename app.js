@@ -109,7 +109,7 @@ function main() {
 	scene.add(light);
 
 	// load a ground texture
-	var texture = new THREE.TextureLoader().load('/_Example/assets/stone.jpg');
+	var texture = new THREE.TextureLoader().load('/example/assets/stone.jpg');
 	texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 	texture.repeat.set(12, 12);
 	const color = 0xccddff;
@@ -129,11 +129,11 @@ function main() {
 
 	// load object texture
 	const texture_t = new THREE.TextureLoader().load(
-		'_Example/assets/rock_01_diffusion.jpg'
+		'example/assets/rock_01_diffusion.jpg'
 	);
 
 	const envMap = new THREE.CubeTextureLoader()
-		.setPath('_Example/assets/')
+		.setPath('example/assets/')
 		.load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']);
 
 	// create Tetrahedron
