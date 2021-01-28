@@ -1,0 +1,22 @@
+{
+  "name": "threejs-test",
+  "version": "1.0.0",
+  "description": "testing Threejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matmac945/three-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matmac945/three-js/issues"
+  },
+  "homepage": "https://github.com/Matmac945/three-js#readme",
+  "dependencies": {
+    "three": "^0.125.1"
+  }
+}
