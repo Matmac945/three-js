@@ -1,4 +1,4 @@
-import * as THREE from '/node_modules/three/build/three.module.js';
+import * as THREE from '/three.module.js';
 
 function main2() {
 	const canvas = document.querySelector('#c');
@@ -109,7 +109,7 @@ function main() {
 	scene.add(light);
 
 	// load a ground texture
-	var texture = new THREE.TextureLoader().load('/example/assets/stone.jpg');
+	var texture = new THREE.TextureLoader().load('example/assets/stone.jpg');
 	texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 	texture.repeat.set(12, 12);
 	const color = 0xccddff;
