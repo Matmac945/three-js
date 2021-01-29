@@ -1,4 +1,4 @@
-import * as THREE from '/three.module.js';
+import * as THREE from './three.module.js';
 
 function main2() {
 	const canvas = document.querySelector('#c');
@@ -109,7 +109,7 @@ function main() {
 	scene.add(light);
 
 	// load a ground texture
-	var texture = new THREE.TextureLoader().load('example/assets/stone.jpg');
+	var texture = new THREE.TextureLoader().load('./example/assets/stone.jpg');
 	texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 	texture.repeat.set(12, 12);
 	const color = 0xccddff;
@@ -129,11 +129,11 @@ function main() {
 
 	// load object texture
 	const texture_t = new THREE.TextureLoader().load(
-		'example/assets/rock_01_diffusion.jpg'
+		'./example/assets/rock_01_diffusion.jpg'
 	);
 
 	const envMap = new THREE.CubeTextureLoader()
-		.setPath('example/assets/')
+		.setPath('./example/assets/')
 		.load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']);
 
 	// create Tetrahedron
